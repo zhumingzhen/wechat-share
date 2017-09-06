@@ -19,14 +19,7 @@ function wechatShare(geUrl,title,desc,link,imgUrl) {
 			timestamp: config.timestamp,
 			nonceStr: config.nonceStr,
 			signature: config.signature,
-			jsApiList: [
-			  // 所有要调用的 API 都要加到这个列表中
-			  'onMenuShareAppMessage',   // 分享到朋友
-			  'onMenuShareTimeline',   // 分享到朋友圈
-			  'onMenuShareQQ',  // 分享到qq   
-			  'onMenuShareWeibo',  // 分享到微博
-			  'onMenuShareQZone'  // 分享到空间
-			]
+			jsApiList: config.jsApiList
 			});
 
 			//  分享基础配置

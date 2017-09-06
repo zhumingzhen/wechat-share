@@ -15,7 +15,7 @@ $array = array(
   'timestamp'=>$signPackage["timestamp"],
   'nonceStr'=>$signPackage["nonceStr"],
   'signature'=>$signPackage["signature"],
-  'jsApiList'=>array('onMenuShareAppMessage','onMenuShareTimeline')
+  'jsApiList'=>array('onMenuShareAppMessage','onMenuShareTimeline','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone')
 );
 echo json_encode($array);
 exit();
